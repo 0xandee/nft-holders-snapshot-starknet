@@ -45,4 +45,4 @@ const saveToFile = (nft_address: string, ownerCounts: Map<string, number>) => {
     console.log(`Owners and their NFT amounts have been written to ${filePath}`);
 }
 
-fetchAssetOwners("0x04546729db564bb29a9e1e215463f41bc53116ac75eeb8e029b8a87fee7d85fd");
+fetchAssetOwners(process.env.SNAPSHOT_NFT_CONTRACT_ADDRESS || "");
