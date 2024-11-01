@@ -22,7 +22,7 @@ coverage/
 # Build output
 dist/
 build/
-output/
+output/*
 
 # IDE and Editor directories
 .vscode/
