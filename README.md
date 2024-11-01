@@ -9,7 +9,6 @@ NFT Holders Snapshot is a Node.js script designed to fetch and analyze NFT owner
 - **Fetch NFT Owners**: Retrieves all owners of a specified NFT contract on the Starknet blockchain.
 - **Pagination Support**: Handles large datasets by fetching data in batches.
 - **CSV Export**: Generates a CSV file containing owner addresses and their respective NFT holdings, sorted by the number of NFTs held.
-- **Environment Configuration**: Utilizes environment variables for secure API key management.
 
 ## Prerequisites
 
@@ -40,43 +39,14 @@ NFT Holders Snapshot is a Node.js script designed to fetch and analyze NFT owner
 
     ```env
     NFTSCAN_API_KEY=your_nftscan_api_key
+    SNAPSHOT_NFT_CONTRACT_ADDRESS=your_snapshot_nft_contract_address
     ```
 
-    Replace `your_nftscan_api_key` with your actual Nftscan API key.
-
-2. **Directory Structure**
-
-    Ensure the `output` directory exists to store the generated CSV files. If it doesn't exist, create it:
-
-    ```bash
-    mkdir output
-    ```
+    Replace `your_nftscan_api_key` with your actual Nftscan API key and `your_snapshot_nft_contract_address` with your NFT address you wants to snapshot holders.
 
 ## Usage
 
-Run the script using `ts-node` or compile it using `tsc` if you prefer.
-
-1. **Using ts-node**
-
-    ```bash
-    npx ts-node scripts/snapshot.ts "0x03859bf9178b48a4ba330d6872ab5a6d3895b64d6631197beefde6293bc172cd"
-    ```
-
-    Replace the NFT contract address with the one you wish to analyze.
-
-2. **Using Compiled JavaScript**
-
-    - **Compile the TypeScript Code**
-
-      ```bash
-      npx tsc scripts/snapshot.ts --outDir dist
-      ```
-
-    - **Run the Compiled Script**
-
-      ```bash
-      node dist/scripts/snapshot.js "0x03859bf9178b48a4ba330d6872ab5a6d3895b64d6631197beefde6293bc172cd"
-      ```
+Run the script: `npm run snapshot`
 
 ## Output
 
