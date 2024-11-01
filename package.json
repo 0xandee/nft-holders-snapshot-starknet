@@ -1,0 +1,17 @@
+{
+	"name": "nft-holders-snapshot-starknet",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"snapshot": "node --loader ts-node/esm ./scripts/snapshot.ts"
+	},
+	"dependencies": {
+		"@types/node": "^22.8.6",
+		"dotenv": "^16.4.5",
+		"nftscan-api": "^1.13.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.6.3"
+	}
+}

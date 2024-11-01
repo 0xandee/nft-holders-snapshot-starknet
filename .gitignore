@@ -1,0 +1,43 @@
+# Node.js dependencies
+/node_modules
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids/
+*.pid
+*.seed
+
+# Coverage directory
+coverage/
+
+# Build output
+dist/
+build/
+output/
+
+# IDE and Editor directories
+.vscode/
+.idea/
+
+# Docker files
+docker-compose.override.yml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Optional npm cache
+.npm
+
+# Optional eslint cache
+.eslintcache
+node_modules
